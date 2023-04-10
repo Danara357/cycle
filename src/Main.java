@@ -42,7 +42,7 @@ public class Main {
         int fertility = 17;
         int mortality = 8;
         while (year <= 10) {
-            totalPopulation = totalPopulation / 1000 + fertility - mortality + totalPopulation;
+            totalPopulation = totalPopulation / 1000 * (fertility - mortality) + totalPopulation;
             System.out.println("Год " + year + ", численность населения составляет " + totalPopulation);
             year++;
         }
